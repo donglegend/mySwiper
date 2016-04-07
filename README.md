@@ -1,8 +1,13 @@
 # mySwiper
 ### 移动端全屏滑动的小插件，简单，轻便，好用，只有3k
 
+#下载
+-直接下载
+-bower install mySwiper
+
 #使用
 支持amd和cmd规范
+
 ## 直接引入
 ```
 <link rel="stylesheet" type="text/css" href="dist/swiper.css">
