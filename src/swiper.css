@@ -1,0 +1,22 @@
+/* line 1, ../sass/swiper.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 5, ../sass/swiper.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 10, ../sass/swiper.scss */
+.stage {
+  height: 100%;
+}
+
+/* line 13, ../sass/swiper.scss */
+.page {
+  height: 100%;
+}

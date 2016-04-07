@@ -1,0 +1,23 @@
+{
+  "name": "mySwiper",
+  "version": "1.0.0",
+  "authors": [
+    "donglegend"
+  ],
+  "description": "移动端全屏滑动js库，轻巧，简单",
+  "keywords": [
+    "swiper",
+    "slip",
+    "slider",
+    "page",
+    "fullpage"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
