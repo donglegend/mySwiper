@@ -49,6 +49,8 @@ function Swiper(opts){
 
 	this._observer = {},
 
+	this.isMouseDown = false,
+
 	this._init();
 	this._bind();
 }
@@ -62,7 +64,7 @@ Swiper.prototype = {
 	_bind: function (){
 		var self = this;
 		this.$stage.addEventListener(touchstart, function (e){
-
+			self.isMouseDown = true;
 			self.$stage.style["-webkit-transition"] = "none";
 			self.$stage.style.transition = "none";
 
@@ -73,6 +75,9 @@ Swiper.prototype = {
 		})
 		
 		this.$stage.addEventListener(touchmove, function (e){
+			if(!self.isMouseDown){
+				return;
+			}
 	  		var touch = self.getPos(e);
 	        self._move.x = touch.x;
 	        self._move.y = touch.y;
@@ -91,7 +96,7 @@ Swiper.prototype = {
 		})
 
 		this.$stage.addEventListener(touchend, function (e){
-
+			self.isMouseDown = false;
 			var touch = self.getPos(e);
 	        self._end.x = touch.x;
 	        self._end.y = touch.y;

@@ -6,7 +6,7 @@
 - bower install mySwiper
 
 #预览
-
+<a href="http://donglegend.com/mySwiper/dist/demo/" target="_blank">预览demo</a>
 
 #使用
 支持amd和cmd规范
