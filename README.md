@@ -5,6 +5,9 @@
 - 直接下载
 - bower install mySwiper
 
+#预览
+
+
 #使用
 支持amd和cmd规范
 
