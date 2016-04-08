@@ -15,7 +15,7 @@ var touchend = mobile ? "touchend" : "mouseup";
 var touchmove = mobile ? "touchmove" : "mousemove";
 
 document.addEventListener(touchmove, function (e){
-	e.preventDefault;
+	e.preventDefault();
 })
 
 // // // // // // // // // // // // // // // // // // // // // // 
@@ -134,7 +134,7 @@ Swiper.prototype = {
 
             var cb = self._observer.moveend || noop;
             cb.apply(self, [self.prev, self.current]);
-            e.preventDefault;
+            e.preventDefault();
 		})
 
 	},
