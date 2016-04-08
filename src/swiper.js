@@ -78,6 +78,7 @@ Swiper.prototype = {
 		})
 		
 		this.$stage.addEventListener(touchmove, function (e){
+			e.e.preventDefault();
 			if(!self.isMouseDown){
 				return;
 			}
